@@ -1,4 +1,7 @@
-# Pancake Toolkit
+# PolyHeist Toolkit
+
+This repository has been forked from https://github.com/pancakeswap/pancake-toolkit and modified to be used on polyheist.io. 
+All credit goes to pancakeswap, for developing the toolkit and making it open source for public use.
 
 This repository is a monorepo manage with [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/) and [Lerna](https://lerna.js.org/). 
 
