@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Variant, variants } from "./types";
-import { Image } from "../../../../components/Image";
 import { RefreshIcon, WalletFilledIcon, WarningIcon } from "../../../../components/Svg";
 import { Colors } from "../../../../theme/types";
 
@@ -20,17 +19,6 @@ const MenuIconWrapper = styled.div<{ borderColor: keyof Colors }>`
   top: -4px;
   width: 40px;
   z-index: 102;
-`;
-
-const ProfileIcon = styled(Image)`
-  left: 0;
-  position: absolute;
-  top: -4px;
-  z-index: 102;
-
-  & > img {
-    border-radius: 50%;
-  }
 `;
 
 export const NoProfileMenuIcon: React.FC = () => (
@@ -57,7 +45,7 @@ export const DangerMenuIcon: React.FC = () => (
   </MenuIconWrapper>
 );
 
-const MenuIcon: React.FC<{ avatarSrc?: string; variant: Variant }> = ({ avatarSrc, variant }) => {
+const MenuIcon: React.FC<{ variant: Variant }> = ({ variant }) => {
   if (variant === variants.DANGER) {
     return <DangerMenuIcon />;
   }
@@ -70,11 +58,7 @@ const MenuIcon: React.FC<{ avatarSrc?: string; variant: Variant }> = ({ avatarSr
     return <PendingMenuIcon />;
   }
 
-  if (!avatarSrc) {
     return <NoProfileMenuIcon />;
-  }
-
-  return <ProfileIcon src={avatarSrc} height={40} width={40} />;
 };
 
 export default MenuIcon;

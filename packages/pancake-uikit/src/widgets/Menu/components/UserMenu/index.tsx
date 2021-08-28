@@ -67,7 +67,6 @@ const Menu = styled.div<{ isOpen: boolean }>`
 const UserMenu: React.FC<UserMenuProps> = ({
   account,
   text,
-  avatarSrc,
   variant = variants.DEFAULT,
   children,
   ...props
@@ -158,7 +157,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
   return (
     <>
       <StyledUserMenu ref={setTargetRef} {...props}>
-        <MenuIcon avatarSrc={avatarSrc} variant={variant} />
+        <MenuIcon variant={variant} />
         <LabelText title={text || account}>{text || accountEllipsis}</LabelText>
         <ChevronDownIcon color="text" width="24px" />
       </StyledUserMenu>

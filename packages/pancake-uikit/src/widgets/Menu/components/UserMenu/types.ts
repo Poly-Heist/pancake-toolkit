@@ -12,7 +12,6 @@ export type Variant = typeof variants[keyof typeof variants];
 export interface UserMenuProps extends FlexProps {
   account?: string;
   text?: string;
-  avatarSrc?: string;
   variant?: Variant;
 }
 
