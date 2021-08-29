@@ -1,20 +1,20 @@
 {
-  "name": "@pancakeswap/uikit",
-  "version": "0.49.2",
-  "description": "Set of UI components for pancake projects",
+  "name": "@polyheist/uikit",
+  "version": "1.0.0",
+  "description": "Set of UI components for polyheist projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/pancake-uikit",
+  "repository": "https://github.com/Poly-Heist/polyheist-toolkit/tree/master/packages/pancake-uikit",
   "license": "MIT",
+  "author": "PolyHeist",
+  "private": false,
   "scripts": {
     "start": "yarn storybook",
     "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
     "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",

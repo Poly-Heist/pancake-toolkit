@@ -1,14 +1,14 @@
 {
-  "name": "@pancakeswap/eslint-config-pancake",
-  "version": "1.2.0",
-  "description": "Eslint config for PancakeSwap",
+  "name": "@polyheist/eslint-config-pancake",
+  "version": "1.0.0",
+  "description": "Eslint config for PolyHeist",
   "main": "lib/index.js",
   "files": [
     "lib"
   ],
-  "repository": "https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/eslint-config-pancake",
+  "repository": "https://github.com/Poly-Heist/polyheist-toolkit/tree/master/packages/eslint-config-pancake",
   "license": "MIT",
-  "author": "RabbitDoge",
+  "author": "PolyHeist",
   "private": false,
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.7.0",
