@@ -2,7 +2,7 @@
   "name": "polyheist-toolkit",
   "version": "1.0.0",
   "description": "PolyHeist frontend packages",
-  "private": true,
+  "private": false,
   "workspaces": [
     "packages/*"
   ],
