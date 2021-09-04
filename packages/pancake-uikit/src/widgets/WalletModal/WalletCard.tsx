@@ -23,7 +23,11 @@ const WalletButton = styled(Button).attrs({ width: "100%", variant: "text", py: 
   margin-right: auto;
 `;
 
-export const MoreWalletCard: React.FC<ButtonProps> = (props) => {
+interface MoreWalletCardProps extends ButtonProps {
+  t?: (key: string) => string;
+}
+
+export const MoreWalletCard: React.FC<MoreWalletCardProps> = ({ ...props }) => {
   return (
     <WalletButton variant="tertiary" {...props}>
       <MoreHorizontal width="40px" mb="8px" color="textSubtle" />

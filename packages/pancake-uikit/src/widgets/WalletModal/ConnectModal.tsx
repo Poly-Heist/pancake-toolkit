@@ -75,7 +75,7 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null, displayC
         </WalletWrapper>
         <Box p="24px">
           <Text textAlign="center" color="textSubtle" as="p" mb="16px">
-            Haven&#39;t got a crypto wallet yet?
+            Haven’t got a crypto wallet yet?
           </Text>
           <Button
             as="a"
